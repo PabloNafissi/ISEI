@@ -1,0 +1,326 @@
+/*Variables*/
+/* Estilos Fijos*/
+body {
+  height: fit-content; }
+
+nav {
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.616); }
+  nav .nav-link {
+    font-family: 'Roboto Slab', serif;
+    font-size: large;
+    color: white; }
+  nav .nav-link:hover {
+    background-color: #d40707b2;
+    transition: all 0.5s;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 0px 1px 1px; }
+
+section {
+  box-shadow: 0px 0px 4px 2px; }
+
+.footer {
+  width: 1fr;
+  height: 80px;
+  background-color: #d40707;
+  border: 2px solid;
+  box-shadow: 0px 0px 4px 2px; }
+  .footer .contacto {
+    margin: 15px;
+    padding: 0; }
+
+/* Estilos -- Section del Home --*/
+.container-section {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .container-section .intro {
+    background-color: #d40707;
+    justify-content: center; }
+    .container-section .intro .pres h1 {
+      color: white;
+      font-family: 'Roboto Slab', serif;
+      font-size: 80pt; }
+    .container-section .intro .pres p {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: medium;
+      text-align: center;
+      font-size: 20pt; }
+    .container-section .intro p {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: medium;
+      text-align: center; }
+    .container-section .intro .pres {
+      padding: 20px;
+      height: 1fr;
+      width: 1fr;
+      text-align: center; }
+    .container-section .intro .show {
+      padding: 20px;
+      height: 1fr;
+      width: 1fr; }
+    .container-section .intro .carousel-text {
+      background-color: rgba(128, 128, 128, 0.432);
+      border-radius: 5px 5px 5px 5px;
+      text-align: center;
+      align-items: center;
+      box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.616);
+      padding: 0; }
+    .container-section .intro .carousel {
+      box-shadow: 0px 0px 1px 1px; }
+  .container-section .seleccion .pop {
+    width: 100%;
+    height: 100%;
+    text-decoration: none; }
+    .container-section .seleccion .pop .letras {
+      width: 250px;
+      height: 50px;
+      color: white;
+      font-family: 'Roboto Slab', serif;
+      font-size: large;
+      background-color: rgba(128, 128, 128, 0.432);
+      border-radius: 5px 5px 5px 5px;
+      text-align: center;
+      align-items: center;
+      box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.616); }
+  .container-section .seleccion .ins {
+    background-image: url("../recursos/inscripcion.jpg"); }
+  .container-section .seleccion .bec {
+    background-image: url("../recursos/beca.jpg"); }
+  .container-section .seleccion .prog {
+    background-image: url("../recursos/Intercambio.jpg"); }
+  .container-section .seleccion .exam {
+    background-image: url("../recursos/examen.jpg"); }
+  .container-section .seleccion .todos-elem {
+    background-size: cover;
+    box-shadow: 0px 0px 4px 2px;
+    height: 151px; }
+  .container-section .seleccion .todos-elem:hover {
+    opacity: 0.6;
+    transition: all 2s; }
+
+/* Estilos -- Section de Cursos --*/
+.section-cursos {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: fit-content;
+  padding: 0; }
+  .section-cursos .row {
+    background-color: #d40707;
+    margin: 0;
+    width: 100%;
+    height: fit-content; }
+    .section-cursos .row .div-expl {
+      height: 800px; }
+      .section-cursos .row .div-expl h1 {
+        font-size: 40pt;
+        color: white;
+        font-family: 'Roboto Slab', serif; }
+      .section-cursos .row .div-expl p {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        text-align: justify; }
+    .section-cursos .row .div-curso p {
+      font-family: 'Roboto', sans-serif; }
+    .section-cursos .row .div-curso button {
+      font-family: 'Roboto', sans-serif; }
+    .section-cursos .row .div-curso .accordion {
+      box-shadow: 0px 0px 1px 1px;
+      border-radius: px;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      .section-cursos .row .div-curso .accordion .accordion-button {
+        background-color: rgba(128, 128, 128, 0.432); }
+        .section-cursos .row .div-curso .accordion .accordion-button h2 {
+          text-decoration: none; }
+      .section-cursos .row .div-curso .accordion .accordion-button:not(.collapsed) {
+        color: #d40707; }
+      .section-cursos .row .div-curso .accordion .accordion-body {
+        height: 550px; }
+
+/* Estilos -- Section de Quienes Somos? --*/
+.section-quienes {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: fit-content;
+  padding: 0; }
+  .section-quienes .row {
+    box-shadow: 0px 0px 1px 1px;
+    margin: 0;
+    width: 100%;
+    height: fit-content; }
+    .section-quienes .row .div-quienes {
+      background-color: #d40707;
+      padding: 10px;
+      box-shadow: 0px 0px 1px 1px; }
+      .section-quienes .row .div-quienes h1 {
+        font-size: 40pt;
+        color: white;
+        font-family: 'Roboto Slab', serif; }
+      .section-quienes .row .div-quienes .parrafo {
+        width: 90%;
+        text-align: justify;
+        font-family: 'Roboto', sans-serif; }
+        .section-quienes .row .div-quienes .parrafo p {
+          color: white; }
+    .section-quienes .row .div-staff {
+      background-color: rgba(128, 128, 128, 0.432);
+      padding: 0; }
+      .section-quienes .row .div-staff p {
+        font-family: 'Roboto', sans-serif; }
+      .section-quienes .row .div-staff h3 {
+        font-family: 'Roboto Slab', serif; }
+    .section-quienes .row h2 {
+      margin-top: 10px;
+      font-family: 'Roboto Slab', serif; }
+    .section-quienes .row .card {
+      margin: 10px;
+      height: 170;
+      width: 180px;
+      background-color: rgba(128, 128, 128, 0.432);
+      text-align: center; }
+      .section-quienes .row .card .card-img-top {
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        margin: 10px; }
+      .section-quienes .row .card .card-body {
+        padding: 0; }
+
+/* Estilos -- Section de Horarios --*/
+.section-horarios {
+  height: fit-content;
+  background-color: #d40707;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0; }
+  .section-horarios .row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 1px 1px; }
+  .section-horarios .div-selhora {
+    height: 400px;
+    margin: 0;
+    padding: 0; }
+    .section-horarios .div-selhora h1 {
+      font-family: 'Roboto Slab', serif;
+      color: white;
+      font-size: 40pt;
+      text-align: center; }
+    .section-horarios .div-selhora option {
+      font-family: 'Roboto', sans-serif; }
+  .section-horarios .div-tbhora {
+    padding: 0;
+    margin: 0;
+    height: 800px; }
+    .section-horarios .div-tbhora table {
+      width: fit-content;
+      height: fit-content;
+      margin: 0;
+      background-color: white;
+      box-shadow: 0px 0px 4px 2px;
+      font-family: 'Roboto', sans-serif; }
+      .section-horarios .div-tbhora table table, .section-horarios .div-tbhora table th, .section-horarios .div-tbhora table td {
+        text-align: center;
+        margin: 0;
+        border: 3px solid rgba(128, 128, 128, 0.432); }
+      .section-horarios .div-tbhora table tbody {
+        height: 450px; }
+      .section-horarios .div-tbhora table thead {
+        height: 50px; }
+
+/* Estilos -- Section de Alumnos --*/
+.section-alumnos {
+  height: fit-content;
+  background-color: #d40707;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0; }
+  .section-alumnos .div-row {
+    height: fit-content;
+    margin: 0;
+    padding: 0; }
+    .section-alumnos .div-row .div-user {
+      margin: 0;
+      padding: 0;
+      height: 800px; }
+      .section-alumnos .div-row .div-user h1 {
+        font-size: 40pt;
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        text-align: center; }
+      .section-alumnos .div-row .div-user a {
+        color: white;
+        font-family: 'Roboto', sans-serif; }
+      .section-alumnos .div-row .div-user label {
+        color: white;
+        font-family: 'Roboto', sans-serif; }
+    .section-alumnos .div-row .div-usercont {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 0;
+      height: fit-content; }
+      .section-alumnos .div-row .div-usercont h3 {
+        color: white;
+        font-family: 'Roboto Slab', serif; }
+      .section-alumnos .div-row .div-usercont a {
+        width: 200px;
+        height: 200px; }
+      .section-alumnos .div-row .div-usercont .user {
+        width: 200px;
+        height: 200px;
+        margin: 15px;
+        background-image: url(../recursos/usuario.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+      .section-alumnos .div-row .div-usercont .book {
+        width: 200px;
+        height: 200px;
+        margin: 15px;
+        background-image: url(../recursos/libro.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+      .section-alumnos .div-row .div-usercont .exam {
+        width: 200px;
+        height: 200px;
+        margin: 15px;
+        background-image: url(../recursos/examenpng.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+      .section-alumnos .div-row .div-usercont .money {
+        width: 200px;
+        height: 200px;
+        margin: 15px;
+        background-image: url(../recursos/dollar.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+      .section-alumnos .div-row .div-usercont .cons {
+        width: 200px;
+        height: 200px;
+        margin: 15px;
+        background-image: url(../recursos/information.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+      .section-alumnos .div-row .div-usercont .config {
+        width: 200px;
+        height: 200px;
+        margin: 15px;
+        background-image: url(../recursos/engrane.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+
+/* Estilos -- ERROR 404 --*/
+.error {
+  margin: 0;
+  text-align: center;
+  height: 100vh; }
+  .error h1 {
+    background-color: #d40707;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Roboto Slab', serif; }
+  .error a {
+    font-family: 'Roboto', sans-serif; }

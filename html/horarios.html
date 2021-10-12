@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I.S.E.I - Horarios</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Cuerpo Barra de navegacion -->
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="#">
+                <img src="../recursos/iseilogo.svg" alt="" width="200" height="80">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-grow-0 " id="navbarNav">
+                <ul class="navbar-nav ml-auto ">
+
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="./quienes.html">¿Quienes somos?</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="./cursos.html">Cursos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="./horarios.html">Horarios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="./alumnos.html">Alumnos</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+
+        </div>
+    </nav>
+
+    <!-- Cuerpo Section -->
+    <section class="section-horarios">
+
+        
+        <div class="row d-flex justify-content-center align-items-center">
+
+            <div class="col-md-5 div-selhora d-flex flex-column justify-content-center align-items-center ">
+
+                <h1>Horarios de Cursado</h1>
+                <br>
+                <select id="mySelect" onchange="myFunction()">
+                    <option selected value="0">Seleccione el Curso</option>
+                    <option value="1">1er Año</option>
+                    <option value="2">2do Año</option>
+                </select>
+                
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("mySelect").value;
+                        if(x==1){
+                        document.getElementById('hora').style.display = 'block';
+                        document.getElementById('hora2').style.display = 'none';
+                        }
+                        else if(x==2){
+                        document.getElementById('hora').style.display = 'none';
+                        document.getElementById('hora2').style.display = 'block';
+                        }
+                        else if (x==0){
+                            document.getElementById('hora').style.display = 'none';
+                            document.getElementById('hora2').style.display = 'none';
+                        }
+                    }
+                </script>
+            </div>
+            
+        
+
+            <div class="col-md-7 div-tbhora d-flex justify-content-center align-items-center" >
+            <div class="table-responsive">
+                <table class="table " style="display: none;" id="hora">
+
+                    <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Lunes</th>
+                        <th scope="col">Martes</th>
+                        <th scope="col">Miercoles</th>
+                        <th scope="col">Jueves</th>
+                        <th scope="col">Viernes</th>
+                    </tr>
+                    </thead>
+    
+                    <tbody>
+    
+                    <tr>
+                        <th scope="row">Lengua</th>
+                        <td>18:00-20:00</td>
+                        <td>-</td>
+                        <td>19:00-21:00</td>
+                        <td>-</td>
+                        <td>19:00-21:00</td>
+                    </tr>
+    
+                    <tr>
+                        <th scope="row">Speaking</th>
+                        <td>-</td>
+                        <td>18:00-20:00</td>
+                        <td>-</td>
+                        <td>18:30-20:00</td>
+                        <td>-</td>
+                    </tr>
+    
+                    <tr>
+                        <th scope="row">Gramatica</th>
+                        <td>20:00-21:00</td>
+                        <td>-</td>
+                        <td>17:00-19:30</td>
+                        <td>-</td>
+                        <td>17:00-19:30</td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row">Gramatica</th>
+                        <td>-</td>
+                        <td>20:00-21:00</td>
+                        <td>-</td>
+                        <td>20:00-21:00</td>
+                        <td>-</td>
+                    </tr>
+    
+                    <tr>
+                        <th scope="row">Consulta</th>
+                        <td>16:00-17:00</td>
+                        <td></td>
+                        <td>16:00-17:00</td>
+                        <td></td>
+                        <td>16:00-17:00</td>
+                    </tr>
+                    
+                    </tbody>
+    
+                </table>
+    
+                <table class="table" style="display: none;" id="hora2">
+    
+                    <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Lunes</th>
+                        <th scope="col">Martes</th>
+                        <th scope="col">Miercoles</th>
+                        <th scope="col">Jueves</th>
+                        <th scope="col">Viernes</th>
+                    </tr>
+                    </thead>
+    
+                    <tbody>
+    
+                    <tr>
+                        <th scope="row">Lengua</th>
+                        <td>10:00-12:00</td>
+                        <td>-</td>
+                        <td>10:00-12:00</td>
+                        <td>-</td>
+                        <td>10:00-12:00</td>
+                    </tr>
+    
+                    <tr>
+                        <th scope="row">Fonetica</th>
+                        <td>-</td>
+                        <td>09:00-10:30</td>
+                        <td>-</td>
+                        <td>09:00-11:00</td>
+                        <td>-</td>
+                    </tr>
+    
+                    <tr>
+                        <th scope="row">Idioma</th>
+                        <td>09:00-10:00</td>
+                        <td>-</td>
+                        <td>09:00-10:00</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row">Gramatica</th>
+                        <td>-</td>
+                        <td>08:00-09:00</td>
+                        <td>-</td>
+                        <td>08:00-09:00</td>
+                        <td>-</td>
+                    </tr>
+    
+                    <tr>
+                        <th scope="row">Consulta</th>
+                        <td>08:00-09:00</td>
+                        <td></td>
+                        <td>08:00-09:00</td>
+                        <td></td>
+                        <td>09:00-10:00</td>
+                    </tr>
+                    
+                    </tbody>
+    
+                </table>
+            </div>
+        
+
+            </div>
+
+        </div>
+        
+    </section>
+
+
+
+    <!-- Footer-->
+
+    <footer class="footer d-flex justify-content-center align-items-center">
+
+        <!-- Iconos de contacto-->
+
+        <a href="https://www.facebook.com/isei.justodaract/" target="_blank" >
+            <img  class="contacto" src="../recursos/facebook.png" alt="" width="40" height="40">
+        </a>
+        
+        <a href="https://www.instagram.com/isei_jd/" target="_blank" >
+            <img  class="contacto" src="../recursos/instagram.png" alt="" width="40" height="40">
+        </a> 
+
+        <a href="https://api.whatsapp.com/send?phone=542657508397//" target="_blank" >
+            <img  class="contacto" src="../recursos/whatsapp.png" alt="" width="40" height="40">
+        </a> 
+
+        <a href="https://outlook.com//" target="_blank" >
+            <img  class="contacto" src="../recursos/email.png" alt="" width="40" height="40">
+        </a> 
+
+    </footer>
+
+    <!-- Script de enlace a Js-->
+    <script class="contacto" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
